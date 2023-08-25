@@ -1,3 +1,43 @@
+:root {
+  /* COLORS */
+  --clr-gray-1: #333;
+  --clr-gray-4: #BDBDBD;
+  --clr-orange: #F2994A;
+  --clr-black: #000;
+
+  --clr-text: var(--clr-gray-1);
+
+  	/* FONT fAMILY */
+	--ff-primary: 'Montserrat', sans-serif;
+  --ff-secondary: 'Playfair Display', serif;
+
+	--ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-secondary);
+
+	/* FONT WEIGHTS */
+	--font-weight-regular: 400;
+	--font-weight-bold: 500;
+  --font-weight-bolder: 700;
+
+  /* FONT SIZES */
+	--font-size-h1: clamp(2.4rem, calc(2.4rem + ((1vw - 0.32rem) * 2.2945)), 4.8rem);
+	--font-size-h2: clamp(1.8rem, calc(1.8rem + ((1vw - 0.32rem) * 0.5736)), 2.4rem);
+	--font-size-h3: clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 0.1912)), 1.8rem);
+	--font-size-text: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 0.1912)), 1.4rem);
+  --font-size-input: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.1912)), 1.6rem);
+  --font-size-input-text: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.1912)), 1.6rem);
+
+  /* line height */
+  --line-height-h1: clamp(3.2rem, calc(3.2rem + ((1vw - 0.32rem) * 3.0593)), 6.4rem);
+  --line-height-text:clamp(1.5rem, calc(1.5rem + ((1vw - 0.32rem) * 0.1912)), 1.7rem); 
+
+  --font-size-attribution: clamp(1.4rem, calc(1.4rem + ((1vw - 0.32rem) * 0.1912)), 1.6rem);
+
+  /* Paddings */
+  --section-block-padding: clamp(3.2rem, calc(3.2rem + ((1vw - 0.32rem) * 1.912)), 5.2rem);
+  --section-inline-padding: clamp(1.1rem, calc(1.1rem + ((1vw - 0.32rem) * 21.3193)), 23.4rem);
+}
+
 /*Box sizing rules*/
 *,
 *:before,
@@ -10,7 +50,6 @@
 	margin: 0;
 	padding: 0;
 }
-
 html,
 body {
 	height: 100%;
@@ -20,6 +59,226 @@ html {
 }
 
 body {
+  max-width: 1440px;
+  margin: auto;
   font-size: 1.6rem;
+  font-family: var(--ff-body);
+}
+/* Typography */
+h1,
+h2,
+h3 {
+  font-family: var(--ff-heading);
+}
+h1 {
+	font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bolder);
+  line-height: var(--line-height-h1);
+}
+h2 {
+	font-size: var(--font-size-h2);
+  margin: 2rem 0;
+}
+h3 {
+	font-size: var(--font-size-h3);
+}
+p {
+	font-size: var(--font-size-text);
+  color: var(--clr-text);
+  line-height: var(--line-height-text);
+}
+ul,
+ol {
+  list-style: none;
+}
+li {
+  line-height: 1.25;
+  margin: 1rem 0;
+}
+figure,
+picture {
+  display: block;
+}
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+/* Layout */
+.section-recipe {
+  padding: var(--section-block-padding) var(--section-inline-padding);
+}
+.grid-container {
+  display: grid;
+  place-items: center;
+}
+/************************** 
+  ITEM RECIPE DESCRIPTION 
+***************************/
+.recipe__title {
+  text-align: left;
+}
+.recipe__description {
+  margin: 1.2rem 0;
+  display: flex;
+}
+.icon__dots {
+  width: 28px;
+  margin-right: 1rem;
+}
+.recipe__text {
+  font-style: italic;
+  font-weight: var(--font-weight-bold);
+  line-height: 15px;
+  text-align: left;
+}
+.recipe__image img {
+  margin: 2.4rem 0;
+  border-radius: 12px;
 }
 
+/***********************************  
+  ITEM TIMING WITH INGREDIENTS LISTS
+************************************/
+.timing__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0 3rem;
+}
+.timing__list li:nth-child(1) {
+  grid-column: 1 / 4;
+}
+.timing__list li {
+  display: flex;
+  gap: .5em;
+  margin: 1.2rem 0;
+}
+.timing__list li figure {
+  width: 28px;
+  height: 28px;
+}
+.timing__list li div span {
+  display: block;
+}
+.timing__list li div span:nth-child(1) {
+  font-size: clamp(0.8rem, calc(0.8rem + ((1vw - 0.32rem) * 0.1912)), 1rem);
+  font-weight: var(--font-weight-bolder);
+  text-transform: uppercase;
+  color: var(--clr-gray-4);
+}
+.timing__list li div span:nth-child(2) {
+  font-size: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.3824)), 1.4rem);
+}
+.timing__list li:nth-child(1) div span:nth-child(2){
+  color: var(--clr-orange);
+}
+/* Ingredients */
+.ingredients-container h3 {
+  margin: 2rem 0;
+  font-style: italic;
+}
+.ingredients__list li label {
+  font-size: var(--font-size-input-text);
+}
+.dark-bold {
+  font-weight: var(--font-weight-bolder);
+  color: var(--clr-black);
+}
+/***********************************   
+  ITEM INSTRUCTIONS
+************************************/
+.grid-item:nth-child(3) {
+  margin-top: 2rem;
+}
+.instructions__list {
+  display: grid;
+  gap: 1.5em;
+  counter-reset: orderedlist;
+}
+.instructions__list li {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 1em;
+  line-height: 1.25;
+}
+.instructions__list li::before {
+  counter-increment: orderedlist;
+  content: counter(orderedlist);
+  padding: .5em .8em;
+  font-family: var(--ff-secondary);
+  font-weight: var(--font-weight-bolder);
+  background-color: var(--clr-orange);
+  color: white;
+  border-radius: 4px;
+}
+.instructions__list li p {
+  font-size: var(--font-size-input-text);
+}
+/********************************** 
+  ITEM SOURCE RECIPE  
+***********************************/
+.grid-item:nth-child(4) {
+  margin-top: 3rem;
+  width: 100%;
+}
+.recipe__source {
+  font-size: clamp(1.2rem, calc(1.2rem + ((1vw - 0.32rem) * 0.3824)), 1.6rem);
+  font-style: italic;
+}
+.recipe__source span {
+  display: block;
+  color: var(--clr-gray-4);
+}
+.recipe__source a {
+  text-decoration: none;
+  color: var(--clr-gray-4);
+}
+
+/******************************* 
+  FOOTER
+********************************/
+.footer {
+  padding: 2rem var(--section-inline-padding);
+  text-align: center;
+}
+.footer__attribution {
+  font-size: var(--font-size-attribution);
+  color: #828282;
+}
+
+/********************************
+ MEDIA QUERIES 
+*********************************/
+@media screen and (min-width: 767px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-container .grid-item:nth-child(1) {
+    grid-column: 1 / 3;
+  }
+  .grid-container .grid-item:nth-child(2) {
+    grid-column: 1 / 3;
+    gap: 4rem;
+    display: flex;
+  }
+  .grid-item:nth-child(2) .timing__list {
+    order: 1;
+    grid-template-columns: 150px;
+    height: 350px;
+    padding: 3em;
+    box-shadow: 0px 0px 20px 0px #0000001A;
+    border-radius: 6px;
+  }
+  .grid-item:nth-child(2) .timing__list li {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
+  .grid-item:nth-child(4) {
+    grid-column: 1 / 3;
+    justify-self: start;
+  }
+  .recipe__source span {
+    display: inline;
+  }
+}

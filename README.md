@@ -24,9 +24,9 @@
 
 ## The challenge
 
-User story: I can see a page following the given design
-User story: I can select a checkbox if I have the ingredients
-User story: I can see the number of servings, baking times
+- User story: I can see a page following the given design
+- User story: I can select a checkbox if I have the ingredients
+- User story: I can see the number of servings, baking times
 
 
 ## Built With

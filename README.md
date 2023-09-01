@@ -1,10 +1,19 @@
-<h1 align="center">Recipe Page</h1>
+# Recipe Page
 
-<div align="center">
-  This application/site was created as a submission to <a href="https://devchallenges.io/paths/responsive-web-developer">Devchallenges</a> 
-</div>
+## The challenge
+Create a recipe page following the given figma design.
 
-<div align="center">
+## User story
+- I can see a page following the given design
+- I can select a checkbox if I have the ingredients
+- I can see the number of servings, baking times
+
+
+## Built With
+
+- CSS
+
+<div>
   <h3>
     <a href="https://amansgz.github.io/css-recipe-page/">
       Demo
@@ -22,18 +31,4 @@
 
 ![screenshot](./assets/preview.png)
 
-## The challenge
-
-- User story: I can see a page following the given design
-- User story: I can select a checkbox if I have the ingredients
-- User story: I can see the number of servings, baking times
-
-
-## Built With
-
-- CSS
-
-## Author
-
-- GitHub [@amansgz](https://github.com/amansgz)
-- DevChallenges [@amansgz](https://devchallenges.io/portfolio/amansgz)
+This application/site was created as a submission to <a href="https://devchallenges.io/paths/responsive-web-developer">Devchallenges</a> 

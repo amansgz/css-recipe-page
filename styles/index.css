@@ -165,7 +165,7 @@ img {
   margin: 1.2rem 0;
   display: flex;
 }
-.icon__dots {
+.recipe__icon {
   width: 28px;
   margin-right: 1rem;
 }
@@ -175,58 +175,65 @@ img {
   line-height: 1.7;
   text-align: left;
 }
-.recipe__image img {
+.recipe__photo img {
   margin: 2.4rem 0;
   border-radius: 12px;
 }
 
 /***********************************  
-  ITEM TIMING WITH INGREDIENTS LISTS
+  ITEM timers WITH INGREDIENTS LISTS
 ************************************/
-.timing__list {
+.timers__list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 2rem 0 3rem;
 }
-.timing__list li:nth-child(1) {
+.timers__list li:nth-child(1) {
   grid-column: 1 / 4;
 }
-.timing__list li {
+.timers__list li {
   display: flex;
   gap: 0.5em;
   margin: 1.2rem 0;
 }
-.timing__list li figure {
+.timers__list li figure {
   width: 20px;
   height: 20px;
 }
-.timing__list li div span {
+.timers__list li div span {
   display: block;
 }
-.timing__list li div span:nth-child(1) {
+.timers__list li div span:nth-child(1) {
   font-size: clamp(0.8rem, calc(0.8rem + ((1vw - 0.32rem) * 0.1912)), 1rem);
   font-weight: var(--font-weight-bolder);
   text-transform: uppercase;
   color: var(--clr-gray-4);
 }
-.timing__list li div span:nth-child(2) {
+.timers__list li div span:nth-child(2) {
   font-size: clamp(1rem, calc(1rem + ((1vw - 0.32rem) * 0.3824)), 1.4rem);
 }
-.timing__list li:nth-child(1) div span:nth-child(2) {
+.timers__list li:nth-child(1) div span:nth-child(2) {
   color: var(--clr-orange);
 }
 /* Ingredients */
-.ingredients-container h3 {
+.ingredients__list:nth-child(2) {
+  margin-bottom: 4rem;
+}
+.ingredients__list {
+  border: none;
+}
+.ingredients__list legend {
   margin: 4rem 0 3rem;
+  font-size: var(--font-size-h3);
   font-style: italic;
 }
-.ingredients__list li {
+.ingredients__list div {
   display: grid;
   grid-template-columns: 20px 1fr;
   gap: 1em;
   align-items: baseline;
 }
-.ingredients__list li label {
+.ingredients__list div label {
   font-size: var(--font-size-input-text);
   line-height: 1.7;
 }
@@ -314,7 +321,7 @@ img {
     gap: 4rem;
     display: flex;
   }
-  .grid-item:nth-child(2) .timing__list {
+  .grid-item:nth-child(2) .timers__list {
     order: 1;
     grid-template-columns: 150px;
     height: 350px;
@@ -322,7 +329,7 @@ img {
     box-shadow: 0px 0px 20px 0px #0000001a;
     border-radius: 6px;
   }
-  .grid-item:nth-child(2) .timing__list li {
+  .grid-item:nth-child(2) .timers__list li {
     grid-column: 1 / 2;
     margin: 0;
   }

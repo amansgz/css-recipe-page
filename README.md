@@ -18,17 +18,9 @@ Create a recipe page following the given figma design.
     <a href="https://amansgz.github.io/css-recipe-page/">
       Demo
     </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/solutions/MFLuU88pMbRWbH5Eb1F7">
-      Solution
-    </a>
-    <span> | </span>
-    <a href="https://devchallenges.io/challenges/OEKdUZ6xs0h99C38XVht">
-      Challenge
-    </a>
   </h3>
 </div>
 
 ![screenshot](./assets/preview.png)
 
-This application/site was created as a submission to <a href="https://devchallenges.io/paths/responsive-web-developer">Devchallenges</a> 
+This application/site was created as a submission to <a href="https://legacy.devchallenges.io/paths/responsive-web-developer">Devchallenges</a> 

@@ -1,26 +1,20 @@
 # Recipe Page
 
-## The challenge
-Create a recipe page following the given figma design.
+This project displays a recipe in a clear and accesible format. The primary goal was to practice HTML and CSS layout and stylling skills.
 
-## User story
-- I can see a page following the given design
-- I can select a checkbox if I have the ingredients
-- I can see the number of servings, baking times
+## Features
 
+- **Semantic HTML:** The HTML structure was designed using semantic tags (`<article>`, `<section>`,`<ul>`,`<ol>`) to improve content accesibility and understanding.
+- **Modern CSS styling:** The design implements a clean, readable, and simple approach.
+- **Responsive Design:** The page is optimized to look good on a variety of devices, from mobile phones to desktops.
 
-## Built With
+## Links
 
-- CSS
+- **Live Site**: [recipe-page](https://amansgz.github.io/css-recipe-page/)
 
-<div>
-  <h3>
-    <a href="https://amansgz.github.io/css-recipe-page/">
-      Demo
-    </a>
-  </h3>
-</div>
+## Credits and Acknowledgements
 
-![screenshot](./assets/preview.png)
+This recipe page was created as a submission to Legacy Devchallenges.
 
-This application/site was created as a submission to <a href="https://legacy.devchallenges.io/paths/responsive-web-developer">Legacy Devchallenges</a> 
+- **Design:** Legacy Devchallenges
+- **Coded by:** @amansgz

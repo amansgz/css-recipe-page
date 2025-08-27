@@ -34,7 +34,6 @@ main {
 ul,
 ol {
   list-style: none;
-  font-size: 14px;
 }
 
 img {
@@ -48,13 +47,13 @@ img {
 /**************/
 .section-heading {
   font-family: var(--ff-heading);
-  font-size: 24px;
+  font-size: 1.6rem;
   color: var(--clr-heading);
   margin: 2rem 0;
 }
 .subsection-heading {
   font-style: italic;
-  font-size: 18px;
+  font-size: 1.1rem;
   font-weight: lighter;
   color: var(--clr-heading);
   margin: 2rem 0;
@@ -77,7 +76,7 @@ img {
   padding: 1.5rem;
 }
 .recipe-title {
-  font-size: 32px;
+  font-size: 1.8rem;
   color: var(--clr-heading);
   font-family: var(--ff-heading);
 }
@@ -111,7 +110,7 @@ img {
 .recipe-details li {
   display: flex;
   gap: 5px;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 1.4;
 }
 .details-wrapper {
@@ -175,7 +174,7 @@ img {
 /* Recipe Attribution */
 /**********************/
 .recipe-attribution {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-style: italic;
   color: var(--clr-text-secondary);
   margin: 1rem 0;
@@ -190,9 +189,8 @@ img {
 /***********/
 .footer {
   padding: 2rem;
-  font-size: 15px;
   text-align: center;
-  color: #b9b8b8;
+  color: var(--clr-text-secondary);
 }
 
 /******************/

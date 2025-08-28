@@ -84,7 +84,6 @@ img {
   margin-top: 5px;
 }
 .recipe-description {
-  max-width: 100ch;
   font-size: clamp(1rem, 2vw, 1.1rem);
   font-style: italic;
   line-height: 1.4;
@@ -100,6 +99,8 @@ img {
 .recipe-details {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 360px;
   margin: 1.5rem 0;
   line-height: 1.4;
 }
@@ -211,7 +212,7 @@ img {
   }
   .recipe-details {
     flex-direction: column;
-    padding: 2rem 5rem;
+    padding: 2rem 3.5rem;
     box-shadow: var(--shadow-subtle);
   }
 }
